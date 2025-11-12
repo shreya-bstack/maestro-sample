@@ -35,7 +35,7 @@ curl -u "<username>:<accesskey>" \
     "devices": [
       "Google Pixel 9-16.0",
       "Samsung Galaxy S22-14.0",
-      "Oppo Reno 8T 5G-13.0"
+      "Samsung Galaxy Tab S11-16.0"
     ]
   }'
 ```  
