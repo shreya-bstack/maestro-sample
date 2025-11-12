@@ -3,7 +3,7 @@ This repo contains a sample test suite that can be used to run maestro tests on 
 
 ### To Run tests:
 App for android: `sample_apps/sample_android.apk`  
-App for iOS: `sample_apps/sample_ios.ipa`
+App for iOS: `sample_apps/sample_ios.ipa`  
 Upload the app using the command:
 ```
 curl -u "<username>:<accesskey>" \
@@ -33,7 +33,10 @@ curl -u "<username>:<accesskey>" \
     "project": "Maestro_Sample_Repo", 
     "tags": {"includeTags": ["android"]},
     "devices": [
-      "Google Pixel 9-16.0"
+      "Google Pixel 9-16.0",
+      "Samsung Galaxy S22-14.0",
+      "Oppo Reno 8T 5G-13.0"
     ]
   }'
 ```  
+This parallelly runs tests on the devices listed in the above command. 
