@@ -1,0 +1,12 @@
+appId: com.browserstack.Samope-iOS
+---
+- runScript: "../../scripts/generateCredentials.js"
+- tapOn: "Full name"
+- inputText: "${output.credentials.username}"
+- tapOn: "Business Email"
+- inputText: "${output.credentials.email}"
+- tapOn: "Password"
+- inputText: "${output.credentials.password}"
+
+# We won't actually create the account
+# - tapOn: "Sign me up"
