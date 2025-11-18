@@ -12,8 +12,8 @@ curl -u "<username>:<accesskey>" \
 ```  
 This should generate and return an app hash.
 
-__Test Suite__: `tests/`  
-zip the `tests/` folder before uploading, and upload using the command:
+__Test Suite__: `parent/`  
+zip the `parent/` folder before uploading, and upload using the command:
 ```
 curl -u "<username>:<accesskey>" \
 -X POST "https://api-cloud.browserstack.com/app-automate/maestro/v2/test-suite" \
@@ -31,7 +31,7 @@ curl -u "<username>:<accesskey>" \
   -d '{
     "app": "bs://<app-hash>",
     "testSuite": "bs://<test-suite-hash>",
-    "project": "Maestro_Sample_Repo", 
+    "project": "Maestro Demo", 
     "execute": ["android-flow.yaml"],
     "devices": [
       "Google Pixel 9-16.0",
@@ -49,7 +49,7 @@ curl -u "<username>:<accesskey>" \
   -d '{
     "app": "bs://<app-hash>",
     "testSuite": "bs://<test-suite-hash>",
-    "project": "<Maestro Demo>", 
+    "project": "Maestro Demo", 
     "execute": ["ios-flow.yaml"],
     "devices": [
       "iPhone 15-17.0",
@@ -58,4 +58,4 @@ curl -u "<username>:<accesskey>" \
     ]
   }'
 ``` 
-This parallelly runs tests on the devices listed in the above command. 
+This runs tests parallelly on the devices listed in the above command. 
