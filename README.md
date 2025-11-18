@@ -8,7 +8,7 @@ Upload the app using the command:
 ```
 curl -u "<username>:<accesskey>" \
 -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
--F "file=@.<path_to_app>"
+-F "file=@<path_to_app>"
 ```  
 This should generate and return an app hash.
 
