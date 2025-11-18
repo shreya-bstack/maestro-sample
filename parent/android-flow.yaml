@@ -1,9 +1,7 @@
 appId: org.wikipedia
-tags:
-  - android
 ---
 - runFlow: subflows/launchapp-android.yaml
-- runFlow: subflows/signup.yaml
+- runFlow: subflows/signup-android.yaml
 - tapOn:
     id: "org.wikipedia:id/search_container"
 - tapOn:

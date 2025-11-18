@@ -2,7 +2,7 @@ appId: org.wikipedia
 ---
 - tapOn: "More"
 - tapOn: "LOG IN.*"
-- runScript: "../../scripts/generateCredentials.js"
+- runScript: "../scripts/generateCredentials.js"
 - tapOn: "Username"
 - inputText: "${output.credentials.username}"
 - tapOn: "Password"

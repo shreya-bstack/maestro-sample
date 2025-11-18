@@ -1,5 +1,0 @@
-appId: com.browserstack.Samope-iOS
----
-- launchApp:
-    clearState: true
-

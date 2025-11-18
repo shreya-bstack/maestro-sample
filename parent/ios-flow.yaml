@@ -1,13 +1,10 @@
-appId: com.browserstack.Samope-iOS
-tags:
-  - ios
+appId: com.browserstack.Sample-iOS
 ---
-- runFlow: subflows/launchapp-ios.yaml
+- launchApp
 
 - tapOn:
-    name: "Web View"
+    text: "Web View"
 - tapOn:
     text: "Get started free"
 - assertVisible: "Create a FREE Account"
 - runFlow: subflows/signup-ios.yaml
-- back
