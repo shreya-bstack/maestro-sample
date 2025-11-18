@@ -22,7 +22,7 @@ curl -u "<username>:<accesskey>" \
 ```  
 This should generate and return a test suite hash.
 
-Once the app and the zipped test suite are uploaded, use the following command to run tests:  
+__Run Build__: Once the app and the zipped test suite are uploaded, use the following command to run tests:  
 For Android:
 ```
 curl -u "<username>:<accesskey>" \
